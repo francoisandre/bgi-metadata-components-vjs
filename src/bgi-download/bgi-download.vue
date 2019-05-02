@@ -85,6 +85,11 @@ export default {
 
 
 <style >
+
+.toto1 {
+	color:red;
+}
+
 	.bgi-download-submit-button {
  border: 0;
  box-shadow: none;

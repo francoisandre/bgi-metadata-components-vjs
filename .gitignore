@@ -12,3 +12,4 @@ yarn-error.log
 /.project
 .settings/
 npm-debug.log*
+/package-lock.json

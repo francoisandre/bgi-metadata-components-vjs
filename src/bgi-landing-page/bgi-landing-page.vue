@@ -8,7 +8,6 @@
   margin-bottom: 10px;
 }
 
-
 </style>
 
 <template>
@@ -54,19 +53,11 @@ export default {
     }
   },
 
-  watch: {
-    lang(value) {
-      //this.$i18n.locale = value;
-    }
-  },
-
   created: function() {
     console.log("Bgi landing page - Creating");
-    //this.$i18n.locale = this.lang;
   },
   
   mounted: function() {
-  	console.log("dddd");
   	var urlParams = new URLSearchParams(window.location.search);
   	var entries = urlParams.entries();
 	for(let pair of entries) {
@@ -87,7 +78,6 @@ export default {
       document.dispatchEvent(
         new CustomEvent("aerisLongActionStopEvent", {
           detail: {
-            //message: this.$i18n.t("loading")
             message: "Loading"
           }
         })

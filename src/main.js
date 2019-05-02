@@ -50,9 +50,9 @@ ljs.load('dep', function() {
 			console.info("Start registration of bgi metadata components")
 			console.info("Registred elements at this time: "+window.registredAerisElements)
 			
-			registerElement('bgi-landing-page', BgiLandingPage);
 			registerElement('bgi-details', BgiDetails);
 			registerElement('bgi-download', BgiDownload);
+			registerElement('bgi-landing-page', BgiLandingPage);
 			
 			stopTimer()
 			console.info("Bgi metadata components registration complete")
