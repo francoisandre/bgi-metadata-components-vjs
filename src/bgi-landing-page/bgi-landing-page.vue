@@ -86,16 +86,15 @@ export default {
       
       console.log(bgiMetadata)
       
-      
       var newMetadata = { resourceTitle: {}, details: {}}
       
       var area = {
     	"area" : {
       "type" : "RECTANGLE_AREA",
-      "northLatitude" : bgiMetadata.latmax,
-      "southLatitude" : bgiMetadata.latmin,
-      "eastLongitude" : bgiMetadata.longmin,
-      "westLongitude" : bgiMetadata.longmax
+      "northLatitude" : parseFloat(bgiMetadata.latmax),
+      "southLatitude" : parseFloat(bgiMetadata.latmin),
+      "eastLongitude" : parseFloat(bgiMetadata.longmax),
+      "westLongitude" : parseFloat(bgiMetadata.longmin)
     	},
     	"projection" : "EPSG 4326"
   	  }
@@ -201,7 +200,7 @@ export default {
 
   data() {
     return {
-    	id: null
+    	id: null,
     };
   }
 };
